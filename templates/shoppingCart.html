@@ -1,0 +1,15 @@
+<h1>Cart</h1>
+<div ng-repeat="listing in listings" class="">
+  <p>
+    Price: {{ listing.price }} Item: {{ listing.listing_id }}
+  </p>
+  <p>
+    Title: {{ listing.title }}
+  </p>
+  <img ng-src="{{ listing.MainImage.url_75x75 }}" alt="">
+  <br>
+  <button type="button" ng-click= 'deleteFromBag(listing)' class="btn btn-lg btn-primary"name="button">Delete</button>
+
+
+</div>
+  <div>Total: ${{ subTotal }} </div>

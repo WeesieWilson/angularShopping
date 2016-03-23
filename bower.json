@@ -1,0 +1,24 @@
+{
+  "name": "angularShopping",
+  "homepage": "https://github.com/WeesieWilson/angularShopping",
+  "authors": [
+    "Louise Wilson <louisebrookswilson@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.2",
+    "angular": "^1.5.2",
+    "angular-route": "^1.5.2"
+  }
+}

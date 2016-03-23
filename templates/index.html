@@ -1,0 +1,28 @@
+<div class="row">
+  <h1>All Listings</h1>
+  <div class="col-md-6">
+
+  </div>
+</div>
+
+<a href="/#/cart"><button type="button" class="btn btn-lg btn-primary"name="button">Go to Shopping Cart</button></a>
+
+<div ng-repeat="listing in listings" class="">
+  <p>
+    Price: {{ listing.price }} Item: {{ listing.listing_id }}
+  </p>
+  <p>
+    Title: {{ listing.title }}
+  </p>
+  <img ng-src="{{ listing.MainImage.url_75x75 }}" alt="">
+  <br>
+  <button type="button" ng-class="{'font-green': listing.isClicked }" ng-click= 'addToBag(listing); itemClick(listing)' class="btn btn-lg btn-primary"name="button">Add to cart</button>
+
+  <a href="/#/shoppingSite/{{listing.listing_id}}"><button type="button" class="btn btn-lg btn-primary"name="button">More Info</button></a>
+</div>
+
+<!-- <div class="" ng-show="getStuff">
+  High {{getStuff.main.temp_max / 10}}
+  Low {{ getStuff.main.temp_min / 10 }}
+
+</div> -->
