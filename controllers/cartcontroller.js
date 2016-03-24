@@ -5,6 +5,9 @@ angular
     TinyService.getBag()
     .then(function(data){
       $scope.listings = data.data;
+      window.glob5 = $scope.listings;
+      console.log($scope.listings);
+      $scope.lengths = $scope.listings.length;
 
 
       var total = 0;

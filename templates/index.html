@@ -6,8 +6,8 @@
 </div>
 
 <a href="/#/cart"><button type="button" class="btn btn-lg btn-primary"name="button">Go to Shopping Cart</button></a>
-
-<div ng-repeat="listing in listings" class="">
+<input type="text" ng-model= 'search' name="" id="">
+<div ng-repeat="listing in listings | filter:search" class="">
   <p>
     Price: {{ listing.price }} Item: {{ listing.listing_id }}
   </p>
@@ -20,9 +20,3 @@
 
   <a href="/#/shoppingSite/{{listing.listing_id}}"><button type="button" class="btn btn-lg btn-primary"name="button">More Info</button></a>
 </div>
-
-<!-- <div class="" ng-show="getStuff">
-  High {{getStuff.main.temp_max / 10}}
-  Low {{ getStuff.main.temp_min / 10 }}
-
-</div> -->
