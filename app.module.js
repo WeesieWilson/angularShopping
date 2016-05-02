@@ -7,11 +7,11 @@ angular
         controller: "HomeController"
       })
       .when('/shoppingSite/:id', {
-        templateUrl: './angularShopping/detailListing.html',
+        templateUrl: 'templates/detailListing.html',
         controller: 'HomeController'
       })
       .when('/cart', {
-        templateUrl: './angularShopping/shoppingCart.html',
+        templateUrl: 'templates/shoppingCart.html',
         controller: "CartController"
       })
       .when('/404',{
