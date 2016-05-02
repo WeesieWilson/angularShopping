@@ -16,7 +16,6 @@ angular
       })
       .when('/404',{
         template: '<h1> Nothing </h1>',
-        controller: 'ShoppingController'
       })
       .otherwise({
          redirectTo: '/404'
