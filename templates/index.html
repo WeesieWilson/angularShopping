@@ -6,10 +6,10 @@
 </div>
 
 <a href="/#/cart"><button type="button" class="btn btn-lg btn-primary"name="button">Go to Shopping Cart</button></a>
-<input type="text" ng-model= 'search' name="" id="">
-<div ng-repeat="listing in listings | filter:search" class="">
+<input type="text" ng-model= 'search.price' name="" id="">
+<div ng-repeat="listing in listings | filter:search:strict" class="">
   <p>
-    Price: {{ listing.price }} Item: {{ listing.listing_id }}
+    Price: {{ listing.price }} 
   </p>
   <p>
     Title: {{ listing.title }}

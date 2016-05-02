@@ -14,7 +14,7 @@ angular
       $scope.listings.forEach(function(el){
         total += parseFloat(el.price);
       })
-      $scope.subTotal = total;
+      $scope.subTotal = (total).toFixed(2);
 
     });
 
