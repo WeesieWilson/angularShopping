@@ -5,11 +5,11 @@
   </div>
 </div>
 
-<a href="/#/cart"><button type="button" class="btn btn-lg btn-primary"name="button">Go to Shopping Cart</button></a>
+<a href="#/cart"><button type="button" class="btn btn-lg btn-primary"name="button">Go to Shopping Cart</button></a>
 <input type="text" ng-model= 'search.price' name="" id="">
 <div ng-repeat="listing in listings | filter:search:strict" class="">
   <p>
-    Price: {{ listing.price }} 
+    Price: {{ listing.price }}
   </p>
   <p>
     Title: {{ listing.title }}
@@ -18,5 +18,5 @@
   <br>
   <button type="button" ng-class="{'font-green': listing.isClicked }" ng-click= 'addToBag(listing); itemClick(listing)' class="btn btn-lg btn-primary"name="button">Add to cart</button>
 
-  <a href="/#/shoppingSite/{{listing.listing_id}}"><button type="button" class="btn btn-lg btn-primary"name="button">More Info</button></a>
+  <a href="#/shoppingSite/{{listing.listing_id}}"><button type="button" class="btn btn-lg btn-primary"name="button">More Info</button></a>
 </div>
